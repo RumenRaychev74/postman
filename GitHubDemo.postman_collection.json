@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "13ac1f9d-c95e-48f0-9e76-c5beb6bc6a8f",
 		"name": "GitHubDemo",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "21089470"
 	},
 	"item": [
@@ -30,36 +30,14 @@
 					"request": {
 						"auth": {
 							"type": "basic",
-							"basic": [
-								{
-									"key": "username",
-									"value": "{{user}}",
-									"type": "string"
-								},
-								{
-									"key": "password",
-									"value": "{{token}}",
-									"type": "string"
-								}
-							]
+							"basic": {
+								"username": "{{user}}",
+								"password": "{{token}}"
+							}
 						},
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "https://api.github.com/repos/{{user}}/{{repo}}/issues",
-							"protocol": "https",
-							"host": [
-								"api",
-								"github",
-								"com"
-							],
-							"path": [
-								"repos",
-								"{{user}}",
-								"{{repo}}",
-								"issues"
-							]
-						}
+						"url": "https://api.github.com/repos/{{user}}/{{repo}}/issues"
 					},
 					"response": []
 				},
@@ -103,22 +81,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "https://api.github.com/repos/{{user}}/{{repo}}/issues/1",
-							"protocol": "https",
-							"host": [
-								"api",
-								"github",
-								"com"
-							],
-							"path": [
-								"repos",
-								"{{user}}",
-								"{{repo}}",
-								"issues",
-								"1"
-							]
-						}
+						"url": "https://api.github.com/repos/{{user}}/{{repo}}/issues/1"
 					},
 					"response": []
 				}
@@ -132,18 +95,10 @@
 					"request": {
 						"auth": {
 							"type": "basic",
-							"basic": [
-								{
-									"key": "username",
-									"value": "{{user}}",
-									"type": "string"
-								},
-								{
-									"key": "password",
-									"value": "{{token}}",
-									"type": "string"
-								}
-							]
+							"basic": {
+								"username": "{{user}}",
+								"password": "{{token}}"
+							}
 						},
 						"method": "POST",
 						"header": [],
@@ -151,22 +106,7 @@
 							"mode": "raw",
 							"raw": ""
 						},
-						"url": {
-							"raw": "https://api.github.com/repos/{{user}}/{{repo}}/issues/3",
-							"protocol": "https",
-							"host": [
-								"api",
-								"github",
-								"com"
-							],
-							"path": [
-								"repos",
-								"{{user}}",
-								"{{repo}}",
-								"issues",
-								"3"
-							]
-						}
+						"url": "https://api.github.com/repos/{{user}}/{{repo}}/issues/3"
 					},
 					"response": []
 				},
@@ -188,18 +128,10 @@
 					"request": {
 						"auth": {
 							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "{{token}}",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "{{user}}",
-									"type": "string"
-								}
-							]
+							"basic": {
+								"password": "{{token}}",
+								"username": "{{user}}"
+							}
 						},
 						"method": "POST",
 						"header": [],
@@ -212,22 +144,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "https://api.github.com/repos/{{user}}/{{repo}}/issues/4",
-							"protocol": "https",
-							"host": [
-								"api",
-								"github",
-								"com"
-							],
-							"path": [
-								"repos",
-								"{{user}}",
-								"{{repo}}",
-								"issues",
-								"4"
-							]
-						}
+						"url": "https://api.github.com/repos/{{user}}/{{repo}}/issues/4"
 					},
 					"response": []
 				}
@@ -267,18 +184,10 @@
 					"request": {
 						"auth": {
 							"type": "basic",
-							"basic": [
-								{
-									"key": "username",
-									"value": "{{user}}",
-									"type": "string"
-								},
-								{
-									"key": "password",
-									"value": "{{token}}",
-									"type": "string"
-								}
-							]
+							"basic": {
+								"username": "{{user}}",
+								"password": "{{token}}"
+							}
 						},
 						"method": "PATCH",
 						"header": [],
@@ -291,22 +200,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "https://api.github.com/repos/{{user}}/{{repo}}/issues/6",
-							"protocol": "https",
-							"host": [
-								"api",
-								"github",
-								"com"
-							],
-							"path": [
-								"repos",
-								"{{user}}",
-								"{{repo}}",
-								"issues",
-								"6"
-							]
-						}
+						"url": "https://api.github.com/repos/{{user}}/{{repo}}/issues/6"
 					},
 					"response": []
 				},
@@ -329,18 +223,10 @@
 					"request": {
 						"auth": {
 							"type": "basic",
-							"basic": [
-								{
-									"key": "username",
-									"value": "{{user}}",
-									"type": "string"
-								},
-								{
-									"key": "password",
-									"value": "{{token}}",
-									"type": "string"
-								}
-							]
+							"basic": {
+								"username": "{{user}}",
+								"password": "{{token}}"
+							}
 						},
 						"method": "PUT",
 						"header": [],
@@ -353,23 +239,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "https://api.github.com/repos/{{user}}/{{repo}}/issues/7/lock",
-							"protocol": "https",
-							"host": [
-								"api",
-								"github",
-								"com"
-							],
-							"path": [
-								"repos",
-								"{{user}}",
-								"{{repo}}",
-								"issues",
-								"7",
-								"lock"
-							]
-						}
+						"url": "https://api.github.com/repos/{{user}}/{{repo}}/issues/7/lock"
 					},
 					"response": []
 				}
@@ -399,18 +269,10 @@
 					"request": {
 						"auth": {
 							"type": "basic",
-							"basic": [
-								{
-									"key": "username",
-									"value": "{{user}}",
-									"type": "string"
-								},
-								{
-									"key": "password",
-									"value": "{{token}}",
-									"type": "string"
-								}
-							]
+							"basic": {
+								"username": "{{user}}",
+								"password": "{{token}}"
+							}
 						},
 						"method": "DELETE",
 						"header": [],
@@ -423,22 +285,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "https://api.github.com/repos/{{user}}/{{repo}}/issues/6",
-							"protocol": "https",
-							"host": [
-								"api",
-								"github",
-								"com"
-							],
-							"path": [
-								"repos",
-								"{{user}}",
-								"{{repo}}",
-								"issues",
-								"6"
-							]
-						}
+						"url": "https://api.github.com/repos/{{user}}/{{repo}}/issues/6"
 					},
 					"response": []
 				}
